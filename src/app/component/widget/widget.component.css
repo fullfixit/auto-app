@@ -1,0 +1,36 @@
+.content{
+    max-width: 1000px;
+    margin: auto;
+    padding: auto;
+}
+
+.body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget-moto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    margin-bottom: 5px;
+}
+
+.widget{
+    width: 315px;
+    height: 220px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    background-color: gray; 
+}
+
+@media (max-width:450px){
+    .widget-moto{
+        row-gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,28 @@
+.widget-voit{
+    position: relative;
+}
+
+.background-video{
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 650px;
+    height: 300px;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+.text{
+    text-align: center;
+    color: aliceblue;
+}
+
+@media (max-width:450px){
+    .background-video{
+        width: 315px;
+        height: 220px;
+    }
+    
+}
