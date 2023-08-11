@@ -1,5 +1,5 @@
 .content{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     padding: auto;
 }
@@ -14,15 +14,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .widget{
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
     width: 315px;
     height: 220px;
     border-radius: 15px;
-    border: 2px solid #000;
-    background-color: gray; 
+    background-color: #000;
 }
 
 @media (max-width:450px){
