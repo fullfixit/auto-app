@@ -1,3 +1,7 @@
-<div>
-    <p>Accessoire</p>
+<div class="widget">
+    <div *ngIf="MeteoData">
+        <h2>Weather in {{ MeteoData.name }}</h2>
+        <p>Temperature: {{ MeteoData.main.temp }}°C</p>
+        <p>Weather: {{ MeteoData.weather[0].description }}</p>
+      </div>
 </div>

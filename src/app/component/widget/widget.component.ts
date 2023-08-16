@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { VoitureComponent } from '../voiture/voiture.component';
 import { HarleyComponent } from '../harley/harley.component';
 import { BoldorComponent } from '../boldor/boldor.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-widget',
@@ -10,7 +11,8 @@ import { BoldorComponent } from '../boldor/boldor.component';
   imports: [CommonModule,
     VoitureComponent,
     HarleyComponent,
-    BoldorComponent
+    BoldorComponent,
+    RouterModule,
   ],
   templateUrl: './widget.component.html',
   styleUrls: ['./widget.component.css']

@@ -1,0 +1,16 @@
+.widget{
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
+    width: 285px;
+    height: 220px;
+    border-radius: 15px;
+    background-color: #000;
+}
+
+@media (max-width:450px){
+    .widget{
+        width: 315px;
+        height: 220px;
+    }
+}

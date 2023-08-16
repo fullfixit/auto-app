@@ -18,15 +18,6 @@
     position: relative;
 }
 
-.widget{
-    color: #fff;
-    cursor: pointer;
-    border: 2px solid #000;
-    width: 315px;
-    height: 220px;
-    border-radius: 15px;
-    background-color: #000;
-}
 
 @media (max-width:450px){
     .widget-moto{
@@ -36,4 +27,5 @@
         align-items: center;
         justify-content: center;
     }
+
 }

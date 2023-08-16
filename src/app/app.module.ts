@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { WidgetComponent } from "./component/widget/widget.component";
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
     declarations: [
@@ -12,7 +16,9 @@ import { WidgetComponent } from "./component/widget/widget.component";
     
     imports: [
         BrowserModule,
-        WidgetComponent
+        WidgetComponent,
+        AppRoutingModule,
+        HttpClientModule,
     ]
 })
 export class AppModule { }
