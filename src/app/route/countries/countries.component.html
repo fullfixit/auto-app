@@ -7,6 +7,6 @@
             <img [src]="country.flags.svg" alt="Flag" class="flag"  width="100" height="60">
             <p>Population: {{ country.population }}</p>
         </div>
-        <p>View in map</p>
+        <p><a [href]="country.googleMaps">View in map</a></p>
     </div>
 </section>
