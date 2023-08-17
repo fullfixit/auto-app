@@ -9,18 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./voiture.component.css']
 })
 export class VoitureComponent {
-  @ViewChild('voitureVid')
-  private voitureVid!: ElementRef;
 
-  ngAfterViewInit() {
-    const videoElement = this.voitureVid.nativeElement as HTMLVideoElement;
-
-    videoElement.addEventListener('mouseenter', () => {
-      videoElement.play();
-    });
-
-    videoElement.addEventListener('mouseleave', () => {
-      videoElement.pause();
-    });
-  }
 }

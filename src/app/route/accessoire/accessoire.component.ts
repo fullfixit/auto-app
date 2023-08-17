@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Observable } from 'rxjs';
 import { AutoService } from 'src/app/auto.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 

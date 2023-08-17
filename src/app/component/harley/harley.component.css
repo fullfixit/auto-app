@@ -1,4 +1,8 @@
 .widget{
+    background-image: url('../../../assets/image/camera.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: #fff;
     cursor: pointer;
     border: 2px solid #000;
