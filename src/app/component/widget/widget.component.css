@@ -1,13 +1,19 @@
+.background{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .content{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     padding: auto;
 }
 
 .body{
     display: grid;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .widget-moto{
@@ -18,6 +24,17 @@
     position: relative;
 }
 
+.image-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    position: absolute;
+    right: 2em;
+  }
+  
+.app-image {
+    margin-right: 10px;
+  }
 
 @media (max-width:450px){
     .widget-moto{

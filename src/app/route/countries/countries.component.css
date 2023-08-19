@@ -5,6 +5,16 @@
   }
   
   .card {
-    border: 1px solid #ccc;
+    border: 1px solid #979696;
     padding: 20px;
+    border-radius: 20px;
   }
+
+  .flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;
+    border-radius: 10px;
+  }
+  

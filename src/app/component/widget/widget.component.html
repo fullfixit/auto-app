@@ -1,3 +1,4 @@
+<div class="background" [style.background-image]="'url(' + backgroundImageUrl + ')'">
 <div class="content">
 <div class="body">
 <nav>
@@ -7,5 +8,11 @@
     </div>
     <app-voiture routerLink="/Countries" routerLinkActive="active"></app-voiture>
 </nav>
+
+<div class="image-container" >
+    <app-backgroundimage class="app-image" [imageName]="imageNames[0]" (imageClicked)="onImageClicked($event)"></app-backgroundimage>
+    <app-backgroundimage class="app-image" [imageName]="imageNames[1]" (imageClicked)="onImageClicked($event)"></app-backgroundimage>
+    <app-backgroundimage class="app-image" [imageName]="imageNames[2]" (imageClicked)="onImageClicked($event)"></app-backgroundimage>
+</div>
 </div>
 </div>

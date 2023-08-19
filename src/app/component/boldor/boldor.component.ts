@@ -1,6 +1,7 @@
-import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AutoService } from 'src/app/auto.service';
+
 
 @Component({
   selector: 'app-boldor',
@@ -8,10 +9,10 @@ import { AutoService } from 'src/app/auto.service';
   imports: [CommonModule,
   ],
   templateUrl: './boldor.component.html',
-  styleUrls: ['./boldor.component.css']
+  styleUrls: ['./boldor.component.css'],
 })
 export class BoldorComponent implements OnInit{
-  MeteoData:any;
+  @Input() MeteoData: any;
 
   constructor(private autoService: AutoService){}
 
@@ -20,14 +21,12 @@ export class BoldorComponent implements OnInit{
   }
 
   getMeteoData() {
-    const countries = 'London'
+    const countries = 'Poland'
     this.autoService.getWeather(countries).subscribe(
-      (response) =>{
-        this.MeteoData = response;
-      },
-      (error) => {
-        console.error('error in fecth dara:', error)
-      }
+    {
+      next:response=>this.MeteoData = response,
+      error:error=>console.log(error),
+    }
     )
   }
 }
