@@ -18,14 +18,8 @@ import { BackgroundimageComponent } from '../backgroundimage/backgroundimage.com
   ],
   templateUrl: './widget.component.html',
   styleUrls: ['./widget.component.css'],
-  changeDetection :ChangeDetectionStrategy.OnPush,
 })
 
 export class WidgetComponent {
-  imageNames = ['beach', 'desert', 'forest'];
-  backgroundImageUrl: string = '../../assets/image/beach.jpg';
 
-  onImageClicked(imageName: string) {
-    this.backgroundImageUrl = `assets/image/${imageName}.jpg`;
-  }
 }

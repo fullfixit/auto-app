@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccessoireComponent } from './route/accessoire/accessoire.component';
 import { WidgetComponent } from './component/widget/widget.component';
 import { CountriesComponent } from './route/countries/countries.component';
+import { BackgroundimageComponent } from './component/backgroundimage/backgroundimage.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     component:CountriesComponent, path:'Countries'
+  },
+  {
+    component:BackgroundimageComponent, path:'image'
   }
 
 ];

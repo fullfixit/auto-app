@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class BackgroundimageComponent {
   @Input() imageName: string = '';
+
   @Output() imageClicked = new EventEmitter<string>();
 
   onImageClick() {

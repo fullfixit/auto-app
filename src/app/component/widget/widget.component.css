@@ -1,48 +1,88 @@
-.background{
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-.content{
-    max-width: 1300px;
+
+*{
     margin: auto;
-    padding: auto;
+
 }
 
-.body{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.widget-moto{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 15px;
-    margin-bottom: 15px;
+.container {
     position: relative;
+    background-image: url('../../../assets/image/water.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 97.5vh;
+    width: 99vw;
 }
 
-.image-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
+.description {
+    font-size: 14px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+.text {
+    margin-top: 6em;
+}
+
+.titre {
+    font-size: 85px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(236, 232, 226);
+}
+
+hr {
+    margin-top: 2em;
+}
+
+.box {
+    margin-top: 1em;
+    width: 500px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    max-width: 1300px;
+}
+
+.widget-box {
     position: absolute;
-    right: 2em;
-  }
-  
-.app-image {
-    margin-right: 10px;
-  }
-
-@media (max-width:450px){
-    .widget-moto{
-        row-gap: 15px;
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-    }
-
+    bottom: 20px;
+    right: 20px;
 }
+
+.widget {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.cards {
+    border-radius: 5px;
+    width: 200px;
+    height: 240px;
+    background:rgb(0, 0, 0);
+    box-shadow: -2px 8px 8px rgba(0, 0, 0, 1);
+    background: linear-gradient(180deg, rgb(0, 0, 0, 1) 0%, rgba(8, 7, 42,1));
+    color: white;
+    cursor: pointer;
+}
+
+.button {
+    cursor: pointer;
+    margin-left: 0;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(3, 2, 31);
+    margin-top: 4em;
+    width: 140px;
+    height: 40px;
+}
+

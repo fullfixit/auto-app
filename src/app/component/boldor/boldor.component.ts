@@ -12,7 +12,7 @@ import { AutoService } from 'src/app/auto.service';
   styleUrls: ['./boldor.component.css'],
 })
 export class BoldorComponent implements OnInit{
-  @Input() MeteoData: any;
+  MeteoData: any;
 
   constructor(private autoService: AutoService){}
 

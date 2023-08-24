@@ -1,18 +1,29 @@
-<div class="background" [style.background-image]="'url(' + backgroundImageUrl + ')'">
-<div class="content">
+<section class="container">
 <div class="body">
-<nav>
-    <div class="widget-moto">
-    <app-harley routerLink="/Accessoires" routerLinkActive="active" class="widget"></app-harley>
-    <app-boldor class="widget"></app-boldor>
-    </div>
-    <app-voiture routerLink="/Countries" routerLinkActive="active"></app-voiture>
-</nav>
 
-<div class="image-container" >
-    <app-backgroundimage class="app-image" [imageName]="imageNames[0]" (imageClicked)="onImageClicked($event)"></app-backgroundimage>
-    <app-backgroundimage class="app-image" [imageName]="imageNames[1]" (imageClicked)="onImageClicked($event)"></app-backgroundimage>
-    <app-backgroundimage class="app-image" [imageName]="imageNames[2]" (imageClicked)="onImageClicked($event)"></app-backgroundimage>
+    <div class="text">
+        <h1 class="titre">Île Maurice</h1>
+        <hr/>
+        <div class="box">
+        <span class="description">Des paysages luxuriants aux infinies plages paradisiaques, 
+            votre séjour tout compris sur 
+            l’île Maurice révèle des merveilles insoupçonnées. Un séjour à l'Ile Maurice au cœur de l’océan Indien, 
+            un paradis tapissé d’eucalyptus, flamboyants et bougainvillées.</span>
+        </div>
+
+        <div class="button">
+            --- See more ---
+        </div>
+    </div>
+
+
+<div class="widget-box">
+<nav class="widget">
+        <app-boldor class="cards"></app-boldor>
+        <app-harley  style="background-image: url(../../../assets/image/map.jpg); background-size: cover; background-position: center center;" class="cards" routerLink="/Accessoires" routerLinkActive="active"></app-harley>
+        <app-voiture style="background-image: url(../../../assets/image/flag.jpg); background-size: cover; background-position: center center;"class="cards" routerLink="/Countries" routerLinkActive="active"></app-voiture>
+</nav>
 </div>
+
 </div>
-</div>
+</section>
