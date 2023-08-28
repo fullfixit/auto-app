@@ -24,22 +24,22 @@
 }
 
 .text {
-    margin-top: 6em;
+    margin-top: 3em;
 }
 
 .titre {
-    font-size: 85px;
+    font-size: 60px;
     font-family: 'Pacifico', cursive;
     color: rgb(236, 232, 226);
 }
 
 hr {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .box {
-    margin-top: 1em;
-    width: 500px;
+    margin-top: 2em;
+    width: 490px;
 }
 
 .body {
@@ -58,16 +58,24 @@ hr {
 .widget {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
+}
+
+.widget-text {
+    text-align: right;
+    font-size: 14px;
+    color: #ffff;
+    margin-bottom: 0.4rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cards {
     border-radius: 5px;
     width: 200px;
-    height: 240px;
+    height: 230px;
     background:rgb(0, 0, 0);
     box-shadow: -2px 8px 8px rgba(0, 0, 0, 1);
-    background: linear-gradient(180deg, rgb(0, 0, 0, 1) 0%, rgba(8, 7, 42,1));
+    background: linear-gradient(180deg, rgb(25, 25, 25) 0%, rgb(24, 27, 109));
     color: white;
     cursor: pointer;
 }
@@ -80,9 +88,22 @@ hr {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background-color: rgb(3, 2, 31);
+    background-color: #020846;
     margin-top: 4em;
     width: 140px;
     height: 40px;
+}
+
+.titre-widget {
+    margin-bottom: 1em;
+    text-align: end;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    color: #ffff;
+}
+
+.titre-widget h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
 }
 

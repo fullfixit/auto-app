@@ -5,6 +5,7 @@ import { HarleyComponent } from '../harley/harley.component';
 import { BoldorComponent } from '../boldor/boldor.component';
 import { RouterModule } from '@angular/router';
 import { BackgroundimageComponent } from '../backgroundimage/backgroundimage.component';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-widget',
@@ -15,6 +16,7 @@ import { BackgroundimageComponent } from '../backgroundimage/backgroundimage.com
     BoldorComponent,
     RouterModule,
     BackgroundimageComponent,
+    HeaderComponent,
   ],
   templateUrl: './widget.component.html',
   styleUrls: ['./widget.component.css'],

@@ -1,0 +1,39 @@
+h2 {
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sky p{
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.weatherRow {
+    display: block;
+    margin:  auto;
+    width: fit-content;
+}
+
+.sun {
+    filter: drop-shadow( 1px 1px 10px yellow);
+    margin-top: 2rem;
+    color: yellow;
+}
+
+.moon {
+    filter: drop-shadow( 1px 1px 10px #dfdfdf);
+    margin-top: 2rem;
+    color: #dfdfdf;
+}

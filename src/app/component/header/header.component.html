@@ -1,0 +1,17 @@
+<nav class="navigation">
+    <ul>
+        <li class="logo">
+            <a href="#">FullFixit</a>
+        </li>
+
+        <li class="burger" (click)="toggleMenu">
+            <i class="material-icons">{{isOpen ? "close": "menu"}}</i>
+        </li>
+
+        <li class="menu" [class.is-open]="isOpen">
+            <a class="menu-item" href="#">A propos</a>
+            <a class="menu-item" href="#">Gallerie</a>
+            <a class="menu-item" href="#">Contacte</a>
+        </li>
+    </ul>
+</nav>

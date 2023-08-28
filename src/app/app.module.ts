@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { WidgetComponent } from "./component/widget/widget.component";
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from "./component/header/header.component";
 
 
 
@@ -13,7 +14,6 @@ import { HttpClientModule } from '@angular/common/http';
         AppComponent,
     ],
     bootstrap: [AppComponent],
-    
     imports: [
         BrowserModule,
         WidgetComponent,

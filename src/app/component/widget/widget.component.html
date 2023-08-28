@@ -1,9 +1,12 @@
 <section class="container">
+    <div class="header">
+        <app-header></app-header>
+    </div>
 <div class="body">
-
+   
     <div class="text">
         <h1 class="titre">Île Maurice</h1>
-        <hr/>
+
         <div class="box">
         <span class="description">Des paysages luxuriants aux infinies plages paradisiaques, 
             votre séjour tout compris sur 
@@ -18,10 +21,34 @@
 
 
 <div class="widget-box">
+
+    <div class="titre-widget">
+        <h2>Consultez le widget</h2>
+        <hr>
+    </div>
+
 <nav class="widget">
-        <app-boldor class="cards"></app-boldor>
-        <app-harley  style="background-image: url(../../../assets/image/map.jpg); background-size: cover; background-position: center center;" class="cards" routerLink="/Accessoires" routerLinkActive="active"></app-harley>
-        <app-voiture style="background-image: url(../../../assets/image/flag.jpg); background-size: cover; background-position: center center;"class="cards" routerLink="/Countries" routerLinkActive="active"></app-voiture>
+    <div class="widget-item">
+    <!--<div class="widget-text">Map</div>-->
+    <div class="cards" style="background-image: url(../../../assets/image/map.jpg); background-size: cover; background-position: center center;"  routerLink="/Accessoires" routerLinkActive="active">
+        <app-harley></app-harley>
+    </div>
+    </div>
+
+    <div class="widget-item">
+    <!--<div class="widget-text">Pays</div>-->
+    <div class="cards" style="background-image: url(../../../assets/image/flag.jpg); background-size: cover; background-position: center center;" routerLink="/Countries" routerLinkActive="active">
+        <app-voiture></app-voiture>
+    </div>
+    </div>
+    
+    <div class="widget-item">
+    <!--<div class="widget-text">Meteo</div>-->
+    <div class="cards">
+        <app-boldor></app-boldor>
+    </div>
+    </div>
+
 </nav>
 </div>
 

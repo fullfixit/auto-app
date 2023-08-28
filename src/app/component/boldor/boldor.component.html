@@ -1,7 +1,22 @@
 <div>
+
     <div *ngIf="MeteoData">
-        <h2>Weather in {{ MeteoData.name }}</h2>
-        <p>Temperature: {{ MeteoData.main.temp }}°C</p>
-        <p>Weather: {{ MeteoData.weather[0].description }}</p>
+
+        <h2 class="weatherRow">{{ MeteoData.name }}</h2>
+        <h4 class="weatherRow">{{ MeteoData.main.temp }}°C</h4>
+
+      <div class="weatherRow" *ngIf="isRealTime(); else moonIcon">
+        <i class="fas fa-3x sun"  [ngClass]="day"></i>
+      </div>
+
+      <ng-template #moonIcon>
+      <div class="weatherRow">
+        <i class="fas fa-3x moon" [ngClass]="night"></i>
+      </div>
+      </ng-template>
+
+      <div class="sky">
+        <p class="weatherRow">{{ MeteoData.weather[0].description }}</p>
+      </div>
       </div>
 </div>
