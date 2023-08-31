@@ -10,18 +10,14 @@ const routes: Routes = [
     path:  '', pathMatch: 'full', redirectTo: '/Widget'
   },
   {
-    component:AccessoireComponent, path: 'Accessoires', 
-
+   path: 'Accessoires', loadComponent: () => import('../app/route/accessoire/accessoire.component').then(m => m.AccessoireComponent)
   },
   {
     component:WidgetComponent, path:'Widget'
   },
   {
-    component:CountriesComponent, path:'Countries'
+  path:'Countries', loadComponent: () => import('../app/route/countries/countries.component').then((m => m.CountriesComponent))
   },
-  {
-    component:BackgroundimageComponent, path:'image'
-  }
 
 ];
 

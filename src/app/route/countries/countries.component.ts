@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { AutoService } from 'src/app/auto.service';
@@ -24,7 +24,7 @@ interface Pays {
     RouterModule
   ],
   templateUrl: './countries.component.html',
-  styleUrls: ['./countries.component.css']
+  styleUrls: ['./countries.component.css'],
 })
 export class CountriesComponent {
   countries: Pays[] = [];

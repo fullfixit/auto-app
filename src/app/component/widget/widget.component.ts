@@ -6,6 +6,7 @@ import { BoldorComponent } from '../boldor/boldor.component';
 import { RouterModule } from '@angular/router';
 import { BackgroundimageComponent } from '../backgroundimage/backgroundimage.component';
 import { HeaderComponent } from '../header/header.component';
+import { VolumeDirective } from 'src/app/volume.directive';
 
 @Component({
   selector: 'app-widget',
@@ -17,6 +18,7 @@ import { HeaderComponent } from '../header/header.component';
     RouterModule,
     BackgroundimageComponent,
     HeaderComponent,
+    VolumeDirective,
   ],
   templateUrl: './widget.component.html',
   styleUrls: ['./widget.component.css'],

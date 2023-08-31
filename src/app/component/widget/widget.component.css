@@ -4,7 +4,6 @@
 
 *{
     margin: auto;
-
 }
 
 .container {
@@ -28,7 +27,7 @@
 }
 
 .titre {
-    font-size: 60px;
+    font-size: 75px;
     font-family: 'Pacifico', cursive;
     color: rgb(236, 232, 226);
 }
@@ -39,14 +38,14 @@ hr {
 
 .box {
     margin-top: 2em;
-    width: 490px;
+    width: 500px;
 }
 
 .body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
 .widget-box {
@@ -107,3 +106,15 @@ hr {
     font-size: 30px;
 }
 
+.animated {
+    animation: accentuation-animation 0.3s ease-in-out;
+  }
+  
+  @keyframes accentuation-animation {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); 
+    }
+  }

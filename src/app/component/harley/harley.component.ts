@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './harley.component.html',
-  styleUrls: ['./harley.component.css']
+  styleUrls: ['./harley.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HarleyComponent {
   

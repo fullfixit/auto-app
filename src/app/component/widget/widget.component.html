@@ -13,10 +13,6 @@
             l’île Maurice révèle des merveilles insoupçonnées. Un séjour à l'Ile Maurice au cœur de l’océan Indien, 
             un paradis tapissé d’eucalyptus, flamboyants et bougainvillées.</span>
         </div>
-
-        <div class="button">
-            --- See more ---
-        </div>
     </div>
 
 
@@ -30,14 +26,14 @@
 <nav class="widget">
     <div class="widget-item">
     <!--<div class="widget-text">Map</div>-->
-    <div class="cards" style="background-image: url(../../../assets/image/map.jpg); background-size: cover; background-position: center center;"  routerLink="/Accessoires" routerLinkActive="active">
+    <div class="cards" style="background-image: url(../../../assets/image/map.jpg); background-size: cover; background-position: center center;"  routerLink="/Accessoires" appVolume>
         <app-harley></app-harley>
     </div>
     </div>
 
     <div class="widget-item">
     <!--<div class="widget-text">Pays</div>-->
-    <div class="cards" style="background-image: url(../../../assets/image/flag.jpg); background-size: cover; background-position: center center;" routerLink="/Countries" routerLinkActive="active">
+    <div class="cards" style="background-image: url(../../../assets/image/flag.jpg); background-size: cover; background-position: center center;" routerLink="/Countries" routerLinkActive="active" appVolume>
         <app-voiture></app-voiture>
     </div>
     </div>
@@ -45,7 +41,7 @@
     <div class="widget-item">
     <!--<div class="widget-text">Meteo</div>-->
     <div class="cards">
-        <app-boldor></app-boldor>
+        <app-boldor appVolume></app-boldor>
     </div>
     </div>
 

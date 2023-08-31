@@ -6,6 +6,7 @@ import { WidgetComponent } from "./component/widget/widget.component";
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from "./component/header/header.component";
+import { VolumeDirective } from './volume.directive';
 
 
 
@@ -19,6 +20,7 @@ import { HeaderComponent } from "./component/header/header.component";
         WidgetComponent,
         AppRoutingModule,
         HttpClientModule,
+        HeaderComponent
     ]
 })
 export class AppModule { }
