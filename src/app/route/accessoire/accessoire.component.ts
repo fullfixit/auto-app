@@ -14,5 +14,5 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 })
 export class AccessoireComponent{
 
-  constructor(private autoService: AutoService, private route: ActivatedRoute){}
+  
 }

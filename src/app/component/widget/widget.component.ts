@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { VoitureComponent } from '../voiture/voiture.component';
 import { HarleyComponent } from '../harley/harley.component';
 import { BoldorComponent } from '../boldor/boldor.component';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { BackgroundimageComponent } from '../backgroundimage/backgroundimage.component';
 import { HeaderComponent } from '../header/header.component';
-import { VolumeDirective } from 'src/app/volume.directive';
+import { WidgetAnimationDirective } from '../widget.directive';
+import { DelayedNavigationService } from 'src/app/delai.service';
 
 @Component({
   selector: 'app-widget',
@@ -18,12 +19,16 @@ import { VolumeDirective } from 'src/app/volume.directive';
     RouterModule,
     BackgroundimageComponent,
     HeaderComponent,
-    VolumeDirective,
+    WidgetAnimationDirective,
   ],
   templateUrl: './widget.component.html',
   styleUrls: ['./widget.component.css'],
 })
 
 export class WidgetComponent {
+  constructor(private delayedNavService: DelayedNavigationService) {}
 
+  navigateWithDelay() {
+    this.delayedNavService.navigateWithDelay('/Countries', 500);
+  }
 }

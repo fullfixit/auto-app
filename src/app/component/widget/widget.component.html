@@ -24,24 +24,24 @@
     </div>
 
 <nav class="widget">
-    <div class="widget-item">
+    <div class="widget-item" appWidgetAnimation>
     <!--<div class="widget-text">Map</div>-->
-    <div class="cards" style="background-image: url(../../../assets/image/map.jpg); background-size: cover; background-position: center center;"  routerLink="/Accessoires" appVolume>
+    <div class="cards" style="background-image: url(../../../assets/image/map.jpg); background-size: cover; background-position: center center;"  routerLink="/Accessoires">
         <app-harley></app-harley>
     </div>
     </div>
 
-    <div class="widget-item">
+    <div class="widget-item" appWidgetAnimation>
     <!--<div class="widget-text">Pays</div>-->
-    <div class="cards" style="background-image: url(../../../assets/image/flag.jpg); background-size: cover; background-position: center center;" routerLink="/Countries" routerLinkActive="active" appVolume>
+    <div class="cards" style="background-image: url(../../../assets/image/flag.jpg); background-size: cover; background-position: center center;" (click)="navigateWithDelay()">
         <app-voiture></app-voiture>
     </div>
     </div>
     
-    <div class="widget-item">
+    <div class="widget-item" appWidgetAnimation>
     <!--<div class="widget-text">Meteo</div>-->
     <div class="cards">
-        <app-boldor appVolume></app-boldor>
+        <app-boldor></app-boldor>
     </div>
     </div>
 

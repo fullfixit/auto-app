@@ -106,15 +106,8 @@ hr {
     font-size: 30px;
 }
 
-.animated {
-    animation: accentuation-animation 0.3s ease-in-out;
-  }
-  
-  @keyframes accentuation-animation {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1); 
-    }
-  }
+.widget-animation-clicked {
+    transition: transform 0.1s ease-in-out;
+    transform: scale(0.9);
+}
+
