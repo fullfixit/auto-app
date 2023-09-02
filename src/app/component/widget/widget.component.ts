@@ -29,6 +29,11 @@ export class WidgetComponent {
   constructor(private delayedNavService: DelayedNavigationService) {}
 
   navigateWithDelay() {
-    this.delayedNavService.navigateWithDelay('/Countries', 500);
+    this.delayedNavService.navigateWithDelay('/Countries', 280);
+  }
+
+  
+  navigateWithDelay1() {
+    this.delayedNavService.navigateWithDelay1('/Accessoires', 280);
   }
 }

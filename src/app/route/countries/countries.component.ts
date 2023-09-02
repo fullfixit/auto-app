@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { AutoService } from 'src/app/auto.service';
 
-interface Pays {
+export interface Pays {
   name:{
     common: string
   }

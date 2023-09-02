@@ -12,4 +12,10 @@ export class DelayedNavigationService {
       this.router.navigateByUrl(url);
     }, delay);
   }
+
+  navigateWithDelay1(url: string, delay: number) {
+    setTimeout(() => {
+      this.router.navigateByUrl(url);
+    }, delay);
+  }
 }

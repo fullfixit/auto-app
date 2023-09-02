@@ -13,6 +13,7 @@ import { AutoService } from 'src/app/auto.service';
   templateUrl: './boldor.component.html',
   styleUrls: ['./boldor.component.css'],
 })
+
 export class BoldorComponent implements OnInit{
   MeteoData: any;
   day: string = 'fa-sun';

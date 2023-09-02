@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CountriesComponent } from './route/countries/countries.component';
-import { Data } from '@angular/router';
+import { Pays } from './route/countries/countries.component';
 
 @Injectable({
   providedIn: 'root'
@@ -15,8 +14,8 @@ export class AutoService {
 
   constructor(private http: HttpClient) {}
 
-  getCountries(): Observable<any>{
-    return this.http.get(this.apiUrl1);
+  getCountries(): Observable<Pays[]>{
+    return this.http.get<Pays[]>(this.apiUrl1);
   }
 
   public getWeather(countries: string): Observable<any> {
