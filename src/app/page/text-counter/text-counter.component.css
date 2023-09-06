@@ -2,3 +2,25 @@ input {
     width: 500px;
     height: 250px;
 }
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.write {
+    background-color: rgb(255, 0, 98);
+    width: 120px;
+    height: 50px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.limit {
+    background-color: rgb(48, 48, 216);
+    width: 120px;
+    height: 50px;
+    color: antiquewhite;
+    text-align: center;
+}

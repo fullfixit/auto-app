@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 export class TextCounterComponent implements OnInit {
 
   text: string='';
+  isTextOff: boolean = false;
 
   ngOnInit(){
     this.counter();
@@ -23,8 +24,11 @@ export class TextCounterComponent implements OnInit {
     const lettremax = 50;
     const nbrelettre = this.text.length;
 
-    if(lettremax < nbrelettre){
-      
+    if(nbrelettre >= lettremax){
+
+    this.isTextOff = true; 
+      } else {
+    this.isTextOff = false;
     }
   }
 }

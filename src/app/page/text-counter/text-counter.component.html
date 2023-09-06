@@ -1,14 +1,14 @@
 
 <div class="input-text">
-    <input type="text" (input)="counter" [(ngModel)]="text">
+    <input type="text" (input)="counter()" [(ngModel)]="text" [disabled]="isTextOff">
 </div>
 
     <div class="counter">
     <div class="write">
-        <p>lettre ecrit</p>
+        <p>lettre ecrit {{ text.length }}</p>
     </div>
 
     <div class="limit">
-        <p>lettre ecrit</p>
+        <p>lettre ecrit {{ 50 - text.length }}</p>
     </div>
 </div>
