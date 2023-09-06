@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { WidgetComponent } from "./component/widget/widget.component";
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent } from "./component/header/header.component";
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +19,7 @@ import { HeaderComponent } from "./component/header/header.component";
         WidgetComponent,
         AppRoutingModule,
         HttpClientModule,
-        HeaderComponent
+        FormsModule,
     ]
 })
 export class AppModule { }

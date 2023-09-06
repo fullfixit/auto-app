@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2? famille= Roboto:poids@300;400 & display=swap');
+
+
+.container{
+    background-color: #e2e2e2;
+    margin: 0;
+}
+
+.body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav {
+    position: fixed;
+    top: 2em;
+}
+
+.fixe-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.button-log {
+    cursor: pointer;
+    color: antiquewhite;
+    font-size: 20px;
+    height: 50px;
+    border-color: #6d6d6d;
+    width: 175px;
+    background-color: #294d61;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-sign {
+    cursor: pointer;
+    color: antiquewhite;
+    font-size: 20px;
+    height: 50px;
+    border-color: #6d6d6d;
+    width: 300px;
+    background-color: #294d61;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.hero-section {
+    padding-top: 2em;
+}
+
+.image-section {
+    margin-top: 5em;
+    margin-left: -4em;
+}
+
+.text-section {
+    padding-left: 6em;
+}
+
+.text-1{
+    margin-top: -3rem;
+    margin-left: 2em;
+}
+
+.text-2{
+    margin-top: -3rem;
+    margin-left: 6em;
+}
+
+
+.text-section h1 {
+    word-spacing: 5px;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hotel-img {
+    width: 1200px;
+    height: 700px;
+    background:rgb(0, 0, 0);
+    box-shadow: 02px 8px 8px rgba(0, 0, 0, 1);
+}
+
+.counter-char {
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

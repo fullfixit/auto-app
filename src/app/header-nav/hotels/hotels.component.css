@@ -1,0 +1,15 @@
+.navbar {
+    border-radius: 10px;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    backdrop-filter: blur(0.5px);
+}
+
+li {
+    display: inline;
+    margin: 30px;
+}
