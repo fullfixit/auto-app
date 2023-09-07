@@ -1,5 +1,6 @@
+<div class="card">
 <h3>Star rating</h3>
-<div class="face" [ngSwitch]="rating">
+<div class="face" [ngSwitch]="rating" >
   <i class="fa-solid fa-face-rolling-eyes expression" *ngSwitchCase="0"></i>
   <i class="fa-regular fa-face-angry angry" *ngSwitchCase="1"></i>
   <i class="fa-regular fa-face-sad-tear sad" *ngSwitchCase="2"></i>
@@ -13,4 +14,4 @@
     <i class="fa-solid fa-star" [ngClass]="{'active':i <= rating}" (click)="updateRating(i)"></i>
   </ng-container>
 </div>
-
+</div>

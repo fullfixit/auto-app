@@ -3,7 +3,7 @@
 
 
 .container{
-    background-color: #b3b0b0;
+    background-color: #ececec;
     margin: 0;
 }
 
@@ -92,8 +92,6 @@
 .hotel-img {
     width: 1200px;
     height: 700px;
-    background:rgb(0, 0, 0);
-    box-shadow: 02px 8px 8px rgba(0, 0, 0, 1);
 }
 
 .counter-char {

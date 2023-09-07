@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1em;
+  overflow: hidden;
+}
+.slide-in {
+  animation: slideIn 0.5s ease-in-out; /* Utilisez l'animation définie ci-dessus */
 }
 
 .face i {
@@ -39,4 +43,12 @@ i {
 
 .active{
   color: yellow;
+}
+
+.card {
+  background-color: #868686; 
+  border-radius: 8px; 
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  margin: 20px; 
 }
