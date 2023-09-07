@@ -1,0 +1,42 @@
+.face {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.face i {
+  font-size: 40px;
+}
+
+.expression {
+  color: black;
+}
+
+.angry {
+  color: red;
+}
+
+.sad {
+  color: blue;
+}
+
+.tired {
+  color: blueviolet;
+}
+
+.laugh {
+  color: green;
+}
+
+.smile {
+  color: #5c0080;
+}
+
+i {
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.active{
+  color: yellow;
+}

@@ -1,0 +1,16 @@
+<h3>Star rating</h3>
+<div class="face" [ngSwitch]="rating">
+  <i class="fa-solid fa-face-rolling-eyes expression" *ngSwitchCase="0"></i>
+  <i class="fa-regular fa-face-angry angry" *ngSwitchCase="1"></i>
+  <i class="fa-regular fa-face-sad-tear sad" *ngSwitchCase="2"></i>
+  <i class="fa-regular fa-face-tired tired" *ngSwitchCase="3"></i>
+  <i class="fa-regular fa-face-smile smile" *ngSwitchCase="4"></i>
+  <i class="fa-regular fa-face-laugh-squint laugh" *ngSwitchCase="5"></i>
+</div>
+
+<div class="rating">
+  <ng-container *ngFor="let i of star">
+    <i class="fa-solid fa-star" [ngClass]="{'active':i <= rating}" (click)="updateRating(i)"></i>
+  </ng-container>
+</div>
+
