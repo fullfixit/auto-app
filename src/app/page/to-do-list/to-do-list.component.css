@@ -1,0 +1,58 @@
+.liste {
+    width: 350px;
+    height: 30px;
+}
+
+.addbtn {
+    width: 75px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.task {
+    text-decoration: none;
+    margin-top: 10px;
+    border-color: black;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    width: 400px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.icon {
+    margin-right: 1em;
+}
+
+i{
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+p {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.disabled-ul {
+    opacity: 0.4;
+    background-color: black;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+  
+  
+  
+  
+  

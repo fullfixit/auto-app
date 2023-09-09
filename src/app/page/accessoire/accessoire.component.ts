@@ -5,6 +5,7 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 import { HotelsComponent } from 'src/app/header-nav/hotels/hotels.component';
 import { TextCounterComponent } from '../text-counter/text-counter.component';
 import { StarRatingComponent } from '../star-rating/star-rating.component';
+import { ToDoListComponent } from '../to-do-list/to-do-list.component';
 
 @Component({
   selector: 'app-accessoire',
@@ -13,7 +14,8 @@ import { StarRatingComponent } from '../star-rating/star-rating.component';
     RouterModule,
     HotelsComponent,
     TextCounterComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    ToDoListComponent
   ],
   templateUrl: './accessoire.component.html',
   styleUrls: ['./accessoire.component.css']

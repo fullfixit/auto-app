@@ -1,0 +1,22 @@
+<div>
+    <h2>Liste de tâches</h2>
+    <div>
+      <input [(ngModel)]="newTask" placeholder="Nouvelle tâche..." class="liste"/>
+      <button (click)="addTask()" class="addbtn">Ajouter</button>
+    </div>
+
+    
+    <ul >
+        <li *ngFor="let list of liste" >
+        <div class="task">
+          <p [class.completed]="list.completed">{{ list.description }}</p>
+
+        <div class="icon" >
+          <input type="checkbox" [(ngModel)]="list.completed" (click)="toggleList(list)" [class.disabled-ul]="list.isListDisabled"/>
+          <i class="fa-solid fa-trash" (click)="deleteList(list)" [class.disabled-ul]="isListDisabled"></i>
+        </div>
+      </div>
+        </li>
+      </ul>
+  </div>
+  

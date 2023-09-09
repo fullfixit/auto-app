@@ -24,9 +24,8 @@
 }
 
 .button {
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
 }
 
 .button-log {
@@ -35,7 +34,7 @@
     font-size: 20px;
     height: 50px;
     border-color: #6d6d6d;
-    width: 175px;
+    width: 300px;
     background-color: #294d61;
     border-radius: 10px;
     display: flex;
@@ -63,11 +62,6 @@
     padding-top: 2em;
 }
 
-.image-section {
-    margin-top: 5em;
-    margin-left: -4em;
-}
-
 .text-section {
     padding-left: 6em;
 }
@@ -89,13 +83,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.img-ban {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5em;
+    margin-left: -4em;
+    column-gap: 10px;
+}
+
 .hotel-img {
-    width: 1200px;
+    width: 1100px;
     height: 700px;
 }
 
+.banniere {
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -1.5em;
+}
+
 .counter-char {
-    margin-top: 5em;
+    padding-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.ToDo {
+    padding-top: 5em;
     display: flex;
     align-items: center;
     justify-content: center;

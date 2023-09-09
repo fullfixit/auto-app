@@ -4,9 +4,6 @@
   margin-bottom: 1em;
   overflow: hidden;
 }
-.slide-in {
-  animation: slideIn 0.5s ease-in-out; /* Utilisez l'animation définie ci-dessus */
-}
 
 .face i {
   font-size: 40px;
